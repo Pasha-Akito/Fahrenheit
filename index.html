@@ -53,11 +53,20 @@
 				</li>
 			</ul>
 			<!-- Top Right Icon -->
-			<ul class="navbar-nav ml-auto nav-flex-icons">
-				<li class="nav-item avatar">
-					<a class="nav-link p-0" href="#">
+			<ul class="navbar-nav ml-auto nav-flex-icons dropdown">
+				<li class="nav-item avatar dropdown-pull-right">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 					<img src="images/controller.png" class="rounded-circle z-depth-0" alt="avatar image" height="35">
 					</a>
+					<div class="dropdown-menu login-dropdown">
+						<h6>LOGIN</h6>
+						<div class="loginbox">
+							<input type="text" placeholder=" Username" name="username" required>
+							<input type="password" placeholder=" Password" name="password" required>
+						</div>
+						<button type="submit">Login</button>
+						
+					</div>
 				</li>
 			</ul>
 		</div>

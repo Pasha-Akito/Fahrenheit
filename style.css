@@ -15,9 +15,9 @@ body {
 
 /* Carousel */
 .caritem img {
-    height: 500px !important;
+    height: 800px !important;
     width: 100% !important;
-	margin-top: 30px;
+	margin-top: 0px;
 }
 
 /* Navbar */
@@ -38,6 +38,34 @@ body {
 	border-bottom: 2px solid white;
 	animation: fadeIn ease 1s;
 }
+
+.avatar a:hover {
+	border: none;
+	animation: none;
+}
+
+.dropdown-pull-right {
+  float: right !important;
+  right: 0;
+  left: auto;
+}
+
+.dropdown-pull-right>.dropdown-menu {
+  right: 0;
+  left: auto;
+}
+
+.login-dropdown {
+	text-align: center;
+	right: 0;
+	left: 0;
+    margin: auto;
+}
+
+.loginbox {
+	padding: 10px;
+}
+
  /* Navbar Item onHover - Animation */
 @keyframes fadeIn {
   0% {
