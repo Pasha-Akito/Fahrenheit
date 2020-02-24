@@ -20,49 +20,52 @@ body {
 	margin-top: 0px;
 }
 
-/* Navbar */
+/* Navbar - Item Hover */
 .nav-item a:hover {
 	color: orange !important;
 	border-bottom: 2px solid white;
 	animation: fadeIn ease 1s;
 }
 
+/* Active Item */
 .active-item a{
 	border: 2px solid white;
 	border-radius: 35px;
 	
 }
 
+/* Active Item - Hover */
 .active-item a:hover {
 	color: orange !important;
 	border-bottom: 2px solid white;
 	animation: fadeIn ease 1s;
 }
 
+/* Avatar Hover */
 .avatar a:hover {
 	border: none;
 	animation: none;
 }
-
 .dropdown-pull-right {
   float: right !important;
   right: 0;
   left: auto;
 }
-
 .dropdown-pull-right>.dropdown-menu {
   right: 0;
   left: auto;
 }
 
-.login-dropdown {
+/* Sign In Dropdown */
+.signIn-dropdown {
 	text-align: center;
 	right: 0;
 	left: 0;
     margin: auto;
 }
 
-.loginbox {
+/* Sign In Box */
+.signInBox {
 	padding: 10px;
 }
 

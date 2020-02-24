@@ -45,6 +45,7 @@
 					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 					Game Reviews
 					</a>
+					<!-- Games -->
 					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 						<a class="dropdown-item" href="#">Game #1</a>
 						<a class="dropdown-item" href="#">Game #2</a>
@@ -52,20 +53,23 @@
 					</div>
 				</li>
 			</ul>
-			<!-- Top Right Icon -->
+			<!-- Top Right Icon (Sign In) -->
 			<ul class="navbar-nav ml-auto nav-flex-icons dropdown">
 				<li class="nav-item avatar dropdown-pull-right">
 					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 					<img src="images/controller.png" class="rounded-circle z-depth-0" alt="avatar image" height="35">
 					</a>
-					<div class="dropdown-menu login-dropdown">
-						<h6>LOGIN</h6>
-						<div class="loginbox">
-							<input type="text" placeholder=" Username" name="username" required>
-							<input type="password" placeholder=" Password" name="password" required>
+					<div class="dropdown-menu signIn-dropdown">
+						<!-- Sign In Panel -->
+						<h6>SIGN IN</h6>
+						<div class="signInBox">
+							<input type="email" id="emailInput" placeholder="email@example.com" name="username" required>
+							<input type="password" id="passwordInput" placeholder="Password" name="password" required>
 						</div>
-						<button type="submit">Login</button>
-						
+						<!-- Sign In Button -->
+						<a class="btn btn-secondary text-white " onclick="checkSignIn()">Sign in</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="signup.html">Don't have an account? Sign up.</a>
 					</div>
 				</li>
 			</ul>
@@ -89,7 +93,7 @@
 						<p>Our reviews are made by our most trusted gamers.</p>
 					</div>
 				</div>
-				<!-- Carousel Item 1 -->
+				<!-- Carousel Item 2 -->
 				<div class="carousel-item carousel caritem">
 					<img size="100%" src="images/car2.jfif" class="d-block w-100" alt="...">
 					<div class="carousel-caption d-none d-md-block">
@@ -97,7 +101,7 @@
 						<p>We will be reviewing the newest games.</p>
 					</div>
 				</div>
-				<!-- Carousel Item 1 -->
+				<!-- Carousel Item 3 -->
 				<div class="carousel-item carousel caritem">
 					<img size="100%" src="images/car3.jpg" class="d-block w-100" alt="...">
 					<div class="carousel-caption d-none d-md-block">
@@ -106,6 +110,7 @@
 					</div>
 				</div>
 			</div>
+			<!-- Carousel Control Arrows -->
 			<a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
 				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 				<span class="sr-only">Previous</span>
@@ -116,6 +121,11 @@
 			</a>
 		</div>
 	</center>
+
+<!-- JavaScript -->
+<script>
+	
+</script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
