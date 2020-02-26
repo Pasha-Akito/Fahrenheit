@@ -12,6 +12,10 @@
 body {
 	//background-color: #837C7B;
 }
+/* Body - Sign Up */
+.bodySignUp {
+	background-color: #c4b44d;
+}
 
 /* Carousel */
 .caritem img {
