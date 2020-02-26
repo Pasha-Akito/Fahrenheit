@@ -10,7 +10,7 @@
 
 /* Body */
 body {
-	background-color: #837C7B
+	//background-color: #837C7B;
 }
 
 /* Carousel */
@@ -25,6 +25,17 @@ body {
 	color: orange !important;
 	border-bottom: 2px solid white;
 	animation: fadeIn ease 1s;
+}
+
+/* Navbar - Sign In on Hover */
+.signIn-onHover li:hover {
+	visibility: visible;
+	
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  
 }
 
 /* Active Item */
