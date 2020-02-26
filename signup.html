@@ -55,6 +55,9 @@
 			</ul>
 			<!-- Top Right Icon (Sign In) -->
 			<ul class="navbar-nav ml-auto nav-flex-icons dropdown">
+				<li class="nav-item">
+					<div id="loginMessage" class="nav-link"></div>
+				</li>
 				<li class="nav-item avatar dropdown-pull-right">
 					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 					<img src="images/controller.png" class="rounded-circle z-depth-0" alt="avatar image" height="35">
@@ -76,52 +79,94 @@
 		</div>
 	</nav>
 
-		<center>
-			<br><br>
-			<div class="container">
-				<div class="col-md-6">
-					<h3 class="text-dark"><u>Join us!</u></h3>
-					<br>
-					<form>
-						<div class="row">
-							<div class="col-md-6">
-								<div class="form-group">
-									<input type="text" name="firstname" id="firstName" class="form-control" placeholder="First Name">
-								</div>
+	<!-- Sign Up - Form -->
+	<center>
+		<br><br>
+		<div class="container">
+			<div class="col-md-6">
+				<h3 class="text-dark"><u>Join us!</u></h3>
+				<br>
+				<!-- Form to Sign Up -->
+				<form>
+					<div class="row">
+						<div class="col-md-6">
+							<!-- First Name -->
+							<div class="form-group">
+								<input type="text" name="firstname" id="firstName" class="form-control" placeholder="First Name">
 							</div>
-							<div class="col-md-6">
-								<div class="form-group">
-									<input type="text" name="lastname" id="lastName" class="form-control" placeholder="Last Name">
-								</div>
-							</div>
-						</div>
-						<div class="form-group">
-							<input type="email" name="email" id="email" class="form-control" placeholder="Email Address">
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<div class="form-group">
-									<input type="number" name="phonenumber" id="phoneNumber" class="form-control" placeholder="Phone Number">
-								</div>
-							</div>
-							<div class="col-md-12">
-								<div class="form-group">
-									<input type="password" name="password" id="password" class="form-control" placeholder="Password">
-								</div>
+						</div>							
+						<div class="col-md-6">
+							<!-- Last Name -->
+							<div class="form-group">
+								<input type="text" name="lastname" id="lastName" class="form-control" placeholder="Last Name">
 							</div>
 						</div>
-						<a onclick="signUp()" href="index.html" class="send-button">Submit</a>
-					</form>
-				</div>
+					</div>
+					<!-- Email -->
+					<div class="form-group">
+						<input type="email" name="email" id="email" class="form-control" placeholder="Email Address">
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<!-- Phone Number -->
+							<div class="form-group">
+								<input type="number" name="phonenumber" id="phoneNumber" class="form-control" placeholder="Phone Number">
+							</div>
+						</div>
+						<div class="col-md-12">
+							<!-- Password -->
+							<div class="form-group">
+								<input type="password" name="password" id="password" class="form-control" placeholder="Password">
+							</div>
+						</div>
+					</div>
+					<!-- Submit Button -->
+					<a onclick="signUp()" href="index.html" class="send-button">Join</a>
+				</form>
 			</div>
-		</center>
+		</div>
+	</center>
 
 </body>
 </html>
 
 <!-- JavaScript -->
 <script>
+
+	<!-- Sign In Function -->
+	<!-- Used to sign in user to the website using Local Storage -->
+	function checkSignIn() {
+		let enteredEmail = document.getElementById("emailInput").value;
+		let enteredPassword = document.getElementById("passwordInput").value;
+		
+		let storedEmail = localStorage.getItem("registeredEmail");
+		let storedPassword = localStorage.getItem("registeredPassword");
+		let storedFirstName = localStorage.getItem("registeredFirstName");
+		
+		let savedEmail = enteredEmail;
+		let savedPassword = enteredPassword;
+		
+		<!-- If login successful -->
+		if (savedEmail == storedEmail && savedPassword == storedPassword) {
+			document.getElementById("loginMessage").innerHTML = "Hello, " + storedFirstName + "!";
+			console.log(storedEmail + " logged in!")
+		}
+		<!-- If login unsuccessful -->
+		else {
+			document.getElementById("loginMessage").innerHTML = "Incorrect email or password";
+		}
+		
+	}
 	
+	<!-- Sign Up Function -->
+	<!-- Used to sign up user to local storage with the details entered in the form -->
+	function signUp() {
+		localStorage.registeredFirstName = document.getElementById("firstName").value;
+		localStorage.registeredLastName = document.getElementById("lastName").value;
+		localStorage.registeredEmail = document.getElementById("email").value;
+		localStorage.registeredPhoneNumber = document.getElementById("phoneNumber").value;
+		localStorage.registeredPassword = document.getElementById("password").value;
+	}
 </script>
 
 <!-- Optional JavaScript -->

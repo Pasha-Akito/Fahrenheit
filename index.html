@@ -5,7 +5,7 @@
 
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -17,8 +17,8 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 
     <title>Worth To Buy</title>
-  </head>
-  <body>
+</head>
+<body>
   
 	<!-- Navbar -->
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -55,6 +55,9 @@
 			</ul>
 			<!-- Top Right Icon (Sign In) -->
 			<ul class="navbar-nav ml-auto nav-flex-icons dropdown">
+				<li class="nav-item">
+					<div id="loginMessage" class="nav-link"></div>
+				</li>
 				<li class="nav-item avatar dropdown-pull-right">
 					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 					<img src="images/controller.png" class="rounded-circle z-depth-0" alt="avatar image" height="35">
@@ -120,6 +123,7 @@
 				<span class="sr-only">Next</span>
 			</a>
 		</div>
+		<!-- RSS Feed - IN PROGRESS -->
 		<div id="widgetmain" style="text-align:left;overflow-y:auto;overflow-x:hidden;width:400px;background-color:#transparent; border:0px solid #333333;"><div id="rsswidget" style="height:500px;"><iframe src="http://us1.rssfeedwidget.com/getrss.php?time=1582713936178&amp;x=http%3A%2F%2Ffeeds.ign.com%2Fign%2Fgames-all&amp;w=400&amp;h=500&amp;bc=333333&amp;bw=0&amp;bgc=transparent&amp;m=25&amp;it=true&amp;t=Game News - IGN&amp;tc=FFFFFF&amp;ts=20&amp;tb=FF781F&amp;il=true&amp;lc=DB961C&amp;ls=17&amp;lb=true&amp;id=true&amp;dc=595959&amp;ds=15&amp;idt=true&amp;dtc=000000&amp;dts=11" border="0" hspace="0" vspace="0" frameborder="no" marginwidth="0" marginheight="0" style="border:0; padding:0; margin:0; width:400px; height:500px;" id="rssOutput">Reading RSS Feed ...</iframe></div><div style="text-align:right;margin-bottom:0;border-top:0px solid #333333;" id="widgetbottom"><span style="font-size:70%"><a href="http://www.rssfeedwidget.com">rss feed widget</a>&nbsp;</span><br></div></div>
 	</center>
 	
@@ -128,7 +132,31 @@
 
 <!-- JavaScript -->
 <script>
-	
+
+	<!-- Sign In Function -->
+	<!-- Used to sign in user to the website using Local Storage -->
+	function checkSignIn() {
+		let enteredEmail = document.getElementById("emailInput").value;
+		let enteredPassword = document.getElementById("passwordInput").value;
+		
+		let storedEmail = localStorage.getItem("registeredEmail");
+		let storedPassword = localStorage.getItem("registeredPassword");
+		let storedFirstName = localStorage.getItem("registeredFirstName");
+		
+		let savedEmail = enteredEmail;
+		let savedPassword = enteredPassword;
+		
+		<!-- If login successful -->
+		if (enteredEmail == storedEmail && savedPassword == enteredPassword) {
+			document.getElementById("loginMessage").innerHTML = "Hello, " + storedFirstName + "!";
+			console.log(storedEmail + " logged in!")
+		}
+		<!-- If login unsuccessful -->
+		else {
+			document.getElementById("loginMessage").innerHTML = "Incorrect email or password";
+		}
+		
+	}
 </script>
 
 <!-- Optional JavaScript -->

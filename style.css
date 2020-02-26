@@ -28,7 +28,7 @@ body {
 .nav-item a:hover {
 	color: orange !important;
 	border-bottom: 2px solid white;
-	animation: fadeIn ease 1s;
+	animation: fadeIn ease 0.5s;
 }
 
 /* Navbar - Sign In on Hover */
@@ -37,6 +37,7 @@ body {
 	
 }
 
+/* Dropdown Hover menu */
 .dropdown:hover .dropdown-menu {
   display: block;
   
@@ -53,7 +54,7 @@ body {
 .active-item a:hover {
 	color: orange !important;
 	border-bottom: 2px solid white;
-	animation: fadeIn ease 1s;
+	animation: fadeIn ease 0.7s;
 }
 
 /* Avatar Hover */
@@ -82,6 +83,71 @@ body {
 /* Sign In Box */
 .signInBox {
 	padding: 10px;
+}
+
+/* Contact Form */
+.contact-form {
+	margin-top: 80px;
+	width: 600px;
+	background-color: #ededed;
+	position: absolute;
+	display: inline-block;
+	left: 50%;
+	margin-left: -300px;
+	padding: 30px 30px;
+	border-radius: 40px;
+	text-align: center;
+	border: 3px solid black;
+}
+/* Contact Form - H1 */
+.contact-form h1 {
+	color: #428bca;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+/* Contact Form Text */
+.contact-us-form-text {
+	margin: 10px 0;
+	padding: 20px 20px;
+	border-radius: 10px;
+	font-weight: bold;
+}
+/* Contact Form - Input */
+.contact-us-form-text input	{
+	text-align: center;
+	width: 100%;
+	border: none;
+	background: none;
+	outline: none;
+	font-size: 20px;
+	margin-top: 10px;
+}
+/* Contact Form - TextArea */
+.contact-us-form-text textarea {
+	text-align: center;
+	width: 100%;
+	height: 55px;
+	border: none;
+	background: none;
+	outline: none;
+	font-size: 20px;
+	margin-top: 10px;
+	resize: none;
+}
+/* Contact Send Button */
+.send-button {
+	display: inline-block;
+	background-color: white;
+	padding: 10px 0px;
+	color: black;
+	font-weight: bolder;
+	font-size: 20px;
+	text-transform: uppercase;
+	cursor: pointer;
+	margin-top: 10px;
+	width: 100%;
+	border: 2px solid black;
+	border-radius: 15px;
 }
 
  /* Navbar Item onHover - Animation */
