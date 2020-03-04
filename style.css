@@ -34,7 +34,11 @@ body {
 /* Navbar - Sign In on Hover */
 .signIn-onHover li:hover {
 	visibility: visible;
-	
+}
+
+/* Navbar - Home Text */
+.navbar-home {
+	margin-left: 15%;
 }
 
 /* Dropdown Hover menu */
