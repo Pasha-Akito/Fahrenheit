@@ -16,11 +16,11 @@
 	<!-- Style CSS Page -->
 	<link rel="stylesheet" type="text/css" href="style.css">
 
-    <title>Worth To Buy - Sign Up!</title>
+    <title>Worth To Buy</title>
 </head>
-<body class="bodySignUp">
-
-		<!-- Navbar -->
+<body>
+  
+	<!-- Navbar -->
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark row">
 		<div class="col-md-4">
 			<div class="collapse navbar-collapse navbar-home" id="navbarNavDropdown">
@@ -38,7 +38,7 @@
 					</li>
 					<!-- About Us -->
 					<li class="nav-item">
-						<a class="nav-link" href="#">About Us</a>
+						<a class="nav-link active active-item" href="#">About Us</a>
 					</li>
 					<!-- Forum -->
 					<li class="nav-item">
@@ -83,56 +83,11 @@
 		</div>
 	</nav>
 	<!-- END OF NAVBAR -->
-
-	<!-- Sign Up - Form -->
-	<center>
-		<br><br>
-		<div class="container">
-			<div class="col-md-6">
-				<h3 class="text-dark"><u>Join us!</u></h3>
-				<br>
-				<!-- Form to Sign Up -->
-				<form>
-					<div class="row">
-						<div class="col-md-6">
-							<!-- First Name -->
-							<div class="form-group">
-								<input type="text" name="firstname" id="firstName" class="form-control" placeholder="First Name">
-							</div>
-						</div>							
-						<div class="col-md-6">
-							<!-- Last Name -->
-							<div class="form-group">
-								<input type="text" name="lastname" id="lastName" class="form-control" placeholder="Last Name">
-							</div>
-						</div>
-					</div>
-					<!-- Email -->
-					<div class="form-group">
-						<input type="email" name="email" id="email" class="form-control" placeholder="Email Address">
-					</div>
-					<div class="row">
-						<div class="col-md-12">
-							<!-- Phone Number -->
-							<div class="form-group">
-								<input type="number" name="phonenumber" id="phoneNumber" class="form-control" placeholder="Phone Number">
-							</div>
-						</div>
-						<div class="col-md-12">
-							<!-- Password -->
-							<div class="form-group">
-								<input type="password" name="password" id="password" class="form-control" placeholder="Password">
-							</div>
-						</div>
-					</div>
-					<!-- Submit Button -->
-					<a onclick="signUp()" href="index.html" class="send-button">Join</a>
-				</form>
-			</div>
-		</div>
-	</center>
-	<!-- END OF SIGN-UP FORM -->
-
+	
+	<!-- About Page - Body -->
+	
+	<!-- END OF ABOUT PAGE - BODY -->
+	
 </body>
 </html>
 
@@ -153,7 +108,7 @@
 		let savedPassword = enteredPassword;
 		
 		<!-- If login successful -->
-		if (savedEmail == storedEmail && savedPassword == storedPassword) {
+		if (enteredEmail == storedEmail && savedPassword == enteredPassword) {
 			document.getElementById("loginMessage").innerHTML = "Hello, " + storedFirstName + "!";
 			console.log(storedEmail + " logged in!")
 		}
@@ -162,16 +117,6 @@
 			document.getElementById("loginMessage").innerHTML = "Incorrect email or password";
 		}
 		
-	}
-	
-	<!-- Sign Up Function -->
-	<!-- Used to sign up user to local storage with the details entered in the form -->
-	function signUp() {
-		localStorage.registeredFirstName = document.getElementById("firstName").value;
-		localStorage.registeredLastName = document.getElementById("lastName").value;
-		localStorage.registeredEmail = document.getElementById("email").value;
-		localStorage.registeredPhoneNumber = document.getElementById("phoneNumber").value;
-		localStorage.registeredPassword = document.getElementById("password").value;
 	}
 </script>
 
