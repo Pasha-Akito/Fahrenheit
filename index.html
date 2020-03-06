@@ -22,76 +22,71 @@
   
 	<!-- Navbar -->
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark row">
-	<div class="col-md-4">
-		<div class="collapse navbar-collapse navbar-home" id="navbarNavDropdown">
-			<a class="navbar-brand" href="index.html">Worth To Buy</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-			</button>
+		<div class="col-md-4">
+			<div class="collapse navbar-collapse navbar-home" id="navbarNavDropdown">
+				<a class="navbar-brand" href="index.html">Worth To Buy</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+				</button>
+			</div>
 		</div>
-	</div>
-	<div class="col-md-7">
-		<ul class="navbar-nav">
-				<!-- Home -->
-				<li class="nav-item active active-item">
-					<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-				</li>
-				<!-- About Us -->
-				<li class="nav-item">
-					<a class="nav-link" href="#">About Us</a>
-				</li>
-				<li>
-					
-				</li>
-				<!-- Forum -->
-				<li class="nav-item">
-					<a class="nav-link" href="#">Forum</a>
-				</li>
-				<!-- Game Reviews Dropdown Menu -->
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					Game Reviews
-					</a>
-					<!-- Games -->
-					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-						<a class="dropdown-item" href="#">Game #1</a>
-						<a class="dropdown-item" href="#">Game #2</a>
-						<a class="dropdown-item" href="#">Game #3</a>
-					</div>
-				</li>
-			</ul>
-	</div>
-	<div class="col-md-1">
-		<!-- Top Right Icon (Sign In) -->
-			<ul class="navbar-nav ml-auto nav-flex-icons dropdown">
-				<li class="nav-item">
-					<div id="loginMessage" class="nav-link"></div>
-				</li>
-				<li class="nav-item avatar dropdown-pull-right">
-					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					<img src="images/controller.png" class="rounded-circle z-depth-0" alt="avatar image" height="35">
-					</a>
-					<div class="dropdown-menu signIn-dropdown signIn-onHover">
-						<!-- Sign In Panel -->
-						<h6>SIGN IN</h6>
-						<div class="signInBox">
-							<input type="email" id="emailInput" placeholder="email@example.com" name="username" required>
-							<input type="password" id="passwordInput" placeholder="Password" name="password" required>
+		<div class="col-md-7">
+			<ul class="navbar-nav">
+					<!-- Home -->
+					<li class="nav-item active active-item">
+						<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<!-- About Us -->
+					<li class="nav-item">
+						<a class="nav-link" href="#">About Us</a>
+					</li>
+					<!-- Forum -->
+					<li class="nav-item">
+						<a class="nav-link" href="#">Video Reviews</a>
+					</li>
+					<!-- Game Reviews Dropdown Menu -->
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Posted Reviews</a>
+						<!-- Games -->
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<a class="dropdown-item" href="#">Game #1</a>
+							<a class="dropdown-item" href="#">Game #2</a>
+							<a class="dropdown-item" href="#">Game #3</a>
 						</div>
-						<!-- Sign In Button -->
-						<a class="btn btn-secondary text-white " onclick="checkSignIn()">Sign in</a>
-						<div class="dropdown-divider"></div>
-						<a class="dropdown-item" href="signup.html">Don't have an account? Sign up.</a>
-					</div>
-				</li>
-			</ul>
-	</div>
-		
-		
+					</li>
+				</ul>
+		</div>
+		<div class="col-md-2">
+			<!-- Top Right Icon (Sign In) -->
+				<ul class="navbar-nav ml-auto nav-flex-icons dropdown">
+					<li class="nav-item">
+						<div id="loginMessage" class="nav-link"></div>
+					</li>
+					<li class="nav-item avatar dropdown-pull-right">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<img src="images/controller.png" class="rounded-circle z-depth-0" alt="avatar image" height="35">
+						</a>
+						<div class="dropdown-menu signIn-dropdown signIn-onHover">
+							<!-- Sign In Panel -->
+							<h6>SIGN IN</h6>
+							<div class="signInBox">
+								<input type="email" id="emailInput" placeholder="email@example.com" name="username" required>
+								<input type="password" id="passwordInput" placeholder="Password" name="password" required>
+							</div>
+							<!-- Sign In Button -->
+							<a class="btn btn-secondary text-white " onclick="checkSignIn()">Sign in</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="signup.html">Don't have an account? Sign up.</a>
+						</div>
+					</li>
+				</ul>
+		</div>
 	</nav>
+	<!-- END OF NAVBAR -->
 	
+	<!-- Home Page - Body -->
 	<div class="modal-body row">
-	<!-- Carousel -->
+		<!-- Carousel -->
 		<div id="carouselExampleCaptions" class="carousel slide carousel-fade col-md-9" data-ride="carousel">
 			<ol class="carousel-indicators">
 				<li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -134,10 +129,14 @@
 				<span class="sr-only">Next</span>
 			</a>
 		</div>
-		<!-- RSS Feed - IN PROGRESS -->
+		<!-- END OF CAROUSEL -->
+		
+		<!-- RSS Feed -->
 		
 		<div class="col-md-3" id="widgetmain" style="text-align:left;overflow-y:auto;overflow-x:hidden;width:400px;background-color:#transparent; border:0px solid #333333;"><div id="rsswidget" style="height:500px;"><iframe src="http://us1.rssfeedwidget.com/getrss.php?time=1582713936178&amp;x=http%3A%2F%2Ffeeds.ign.com%2Fign%2Fgames-all&amp;w=400&amp;h=500&amp;bc=333333&amp;bw=0&amp;bgc=transparent&amp;m=25&amp;it=true&amp;t=Game News - IGN&amp;tc=FFFFFF&amp;ts=20&amp;tb=FF781F&amp;il=true&amp;lc=DB961C&amp;ls=17&amp;lb=true&amp;id=true&amp;dc=595959&amp;ds=15&amp;idt=true&amp;dtc=000000&amp;dts=11" border="0" hspace="0" vspace="0" frameborder="no" marginwidth="0" marginheight="0" style="border:0; padding:0; margin:0; width:400px; height:500px;" id="rssOutput">Reading RSS Feed ...</iframe></div><div style="text-align:right;margin-bottom:0;border-top:0px solid #333333;" id="widgetbottom"><span style="font-size:70%"><a href="http://www.rssfeedwidget.com">rss feed widget</a>&nbsp;</span><br></div></div>
 	</div>
+	<!-- END OF HOME PAGE - BODY -->
+	
 </body>
 </html>
 

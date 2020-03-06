@@ -20,64 +20,69 @@
 </head>
 <body class="bodySignUp">
 
-	<!-- Navbar -->
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-		<a class="navbar-brand" href="index.html">Worth To Buy</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarNavDropdown">
+		<!-- Navbar -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark row">
+		<div class="col-md-4">
+			<div class="collapse navbar-collapse navbar-home" id="navbarNavDropdown">
+				<a class="navbar-brand" href="index.html">Worth To Buy</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+				</button>
+			</div>
+		</div>
+		<div class="col-md-7">
 			<ul class="navbar-nav">
-				<!-- Home -->
-				<li class="nav-item active active-item">
-					<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-				</li>
-				<!-- About Us -->
-				<li class="nav-item">
-					<a class="nav-link" href="#">About Us</a>
-				</li>
-				<!-- Forum -->
-				<li class="nav-item">
-					<a class="nav-link" href="#">Forum</a>
-				</li>
-				<!-- Game Reviews Dropdown Menu -->
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					Game Reviews
-					</a>
-					<!-- Games -->
-					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-						<a class="dropdown-item" href="#">Game #1</a>
-						<a class="dropdown-item" href="#">Game #2</a>
-						<a class="dropdown-item" href="#">Game #3</a>
-					</div>
-				</li>
-			</ul>
-			<!-- Top Right Icon (Sign In) -->
-			<ul class="navbar-nav ml-auto nav-flex-icons dropdown">
-				<li class="nav-item">
-					<div id="loginMessage" class="nav-link"></div>
-				</li>
-				<li class="nav-item avatar dropdown-pull-right">
-					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					<img src="images/controller.png" class="rounded-circle z-depth-0" alt="avatar image" height="35">
-					</a>
-					<div class="dropdown-menu signIn-dropdown signIn-onHover">
-						<!-- Sign In Panel -->
-						<h6>SIGN IN</h6>
-						<div class="signInBox">
-							<input type="email" id="emailInput" placeholder="email@example.com" name="username" required>
-							<input type="password" id="passwordInput" placeholder="Password" name="password" required>
+					<!-- Home -->
+					<li class="nav-item active active-item">
+						<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<!-- About Us -->
+					<li class="nav-item">
+						<a class="nav-link" href="#">About Us</a>
+					</li>
+					<!-- Forum -->
+					<li class="nav-item">
+						<a class="nav-link" href="#">Video Reviews</a>
+					</li>
+					<!-- Game Reviews Dropdown Menu -->
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Posted Reviews</a>
+						<!-- Games -->
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<a class="dropdown-item" href="#">Game #1</a>
+							<a class="dropdown-item" href="#">Game #2</a>
+							<a class="dropdown-item" href="#">Game #3</a>
 						</div>
-						<!-- Sign In Button -->
-						<a class="btn btn-secondary text-white " onclick="checkSignIn()">Sign in</a>
-						<div class="dropdown-divider"></div>
-						<a class="dropdown-item" href="signup.html">Don't have an account? Sign up.</a>
-					</div>
-				</li>
-			</ul>
+					</li>
+				</ul>
+		</div>
+		<div class="col-md-2">
+			<!-- Top Right Icon (Sign In) -->
+				<ul class="navbar-nav ml-auto nav-flex-icons dropdown">
+					<li class="nav-item">
+						<div id="loginMessage" class="nav-link"></div>
+					</li>
+					<li class="nav-item avatar dropdown-pull-right">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<img src="images/controller.png" class="rounded-circle z-depth-0" alt="avatar image" height="35">
+						</a>
+						<div class="dropdown-menu signIn-dropdown signIn-onHover">
+							<!-- Sign In Panel -->
+							<h6>SIGN IN</h6>
+							<div class="signInBox">
+								<input type="email" id="emailInput" placeholder="email@example.com" name="username" required>
+								<input type="password" id="passwordInput" placeholder="Password" name="password" required>
+							</div>
+							<!-- Sign In Button -->
+							<a class="btn btn-secondary text-white " onclick="checkSignIn()">Sign in</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="signup.html">Don't have an account? Sign up.</a>
+						</div>
+					</li>
+				</ul>
 		</div>
 	</nav>
+	<!-- END OF NAVBAR -->
 
 	<!-- Sign Up - Form -->
 	<center>
@@ -126,6 +131,7 @@
 			</div>
 		</div>
 	</center>
+	<!-- END OF SIGN-UP FORM -->
 
 </body>
 </html>
