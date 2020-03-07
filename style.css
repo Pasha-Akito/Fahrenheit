@@ -12,16 +12,26 @@
 body {
 	//background-color: #837C7B;
 }
-/* Body - Sign Up */
-.bodySignUp {
-	background-color: #c4b44d;
-}
 
 /* Carousel */
 .caritem img {
     height: 800px !important;
     width: 100% !important;
 	margin-top: 0px;
+}
+
+/* Active Item */
+.active-item a{
+	border: 2px solid white;
+	border-radius: 35px;
+	
+}
+
+/* Active Item - Hover */
+.active-item a:hover {
+	color: orange !important;
+	border-bottom: 2px solid white;
+	animation: fadeIn ease 0.7s;
 }
 
 /* Navbar - Item Hover */
@@ -47,30 +57,20 @@ body {
   
 }
 
-/* Active Item */
-.active-item a{
-	border: 2px solid white;
-	border-radius: 35px;
-	
-}
-
-/* Active Item - Hover */
-.active-item a:hover {
-	color: orange !important;
-	border-bottom: 2px solid white;
-	animation: fadeIn ease 0.7s;
-}
-
 /* Avatar Hover */
 .avatar a:hover {
 	border: none;
 	animation: none;
 }
+
+/* Dropdown Right */
 .dropdown-pull-right {
   float: right !important;
   right: 0;
   left: auto;
 }
+
+/* Dropdown Right-Menu */
 .dropdown-pull-right>.dropdown-menu {
   right: 0;
   left: auto;
@@ -87,6 +87,11 @@ body {
 /* Sign In Box */
 .signInBox {
 	padding: 10px;
+}
+
+/* Body - Sign Up */
+.bodySignUp {
+	background-color: #c4b44d;
 }
 
 /* Contact Form */
