@@ -7,6 +7,7 @@
 
 * {
 	margin: 0;
+	padding: 0;
 }
 
 /* Carousel */
@@ -175,6 +176,42 @@
 	width: 100%;
 	border: 2px solid black;
 	border-radius: 15px;
+}
+
+/* About Us - Notes Title */
+
+.aboutNoteTitle {
+	color: moccasin;
+	text-align: center;
+	text-shadow: 2px 2px black;
+	display: inline-block;
+	align-items: center;
+	margin: auto;
+	overflow: hidden;
+	border: 2px solid black;
+	
+}
+
+/* About Us - Notes Title Headers */
+
+.aboutNoteTitleHeader {
+	color: orange;
+	font-size: x-large;
+}
+
+/* About Us - About Section */
+
+.aboutNote {
+	background-color: gray;
+	color: white;
+	text-align: center;
+	text-shadow: 2px 2px black;
+}
+
+/* About Us - About Section Text */
+
+#aboutNoteTitleText {
+	color: red;
 }
 
 /* Navbar Item onHover - Animation */
