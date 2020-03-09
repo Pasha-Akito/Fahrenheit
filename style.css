@@ -4,30 +4,28 @@
  */
 
 /* All */
- * {
+
+* {
 	margin: 0;
 }
 
-/* Body */
-body {
-	//background-color: #837C7B;
-}
-
 /* Carousel */
+
 .caritem img {
-    height: 800px !important;
-    width: 100% !important;
+	height: 800px !important;
+	width: 100% !important;
 	margin-top: 0px;
 }
 
 /* Active Item */
-.active-item a{
+
+.active-item a {
 	border: 2px solid white;
 	border-radius: 35px;
-	
 }
 
 /* Active Item - Hover */
+
 .active-item a:hover {
 	color: orange !important;
 	border-bottom: 2px solid white;
@@ -35,6 +33,7 @@ body {
 }
 
 /* Navbar - Item Hover */
+
 .nav-item a:hover {
 	color: orange !important;
 	border-bottom: 2px solid white;
@@ -42,59 +41,68 @@ body {
 }
 
 /* Navbar - Sign In on Hover */
+
 .signIn-onHover li:hover {
 	visibility: visible;
 }
 
 /* Navbar - Home Text */
+
 .navbar-home {
 	margin-left: 15%;
 }
 
 /* Dropdown Hover menu */
+
 .dropdown:hover .dropdown-menu {
-  display: block;
-  
+	display: block;
 }
 
 /* Avatar Hover */
+
 .avatar a:hover {
 	border: none;
 	animation: none;
 }
 
 /* Dropdown Right */
+
 .dropdown-pull-right {
-  float: right !important;
-  right: 0;
-  left: auto;
+	float: right !important;
+	right: 0;
+	left: auto;
 }
 
 /* Dropdown Right-Menu */
+
 .dropdown-pull-right>.dropdown-menu {
-  right: 0;
-  left: auto;
+	right: 0;
+	left: auto;
 }
 
 /* Sign In Dropdown */
+
 .signIn-dropdown {
 	text-align: center;
 	right: 0;
 	left: 0;
-    margin: auto;
+	margin: auto;
 }
 
 /* Sign In Box */
+
 .signInBox {
 	padding: 10px;
 }
 
 /* Body - Sign Up */
+
 .bodySignUp {
 	background-color: #c4b44d;
 }
 
 /* Contact Form */
+
 .contact-form {
 	margin-top: 80px;
 	width: 600px;
@@ -108,21 +116,27 @@ body {
 	text-align: center;
 	border: 3px solid black;
 }
+
 /* Contact Form - H1 */
+
 .contact-form h1 {
 	color: #428bca;
 	font-weight: normal;
 	text-transform: uppercase;
 }
+
 /* Contact Form Text */
+
 .contact-us-form-text {
 	margin: 10px 0;
 	padding: 20px 20px;
 	border-radius: 10px;
 	font-weight: bold;
 }
+
 /* Contact Form - Input */
-.contact-us-form-text input	{
+
+.contact-us-form-text input {
 	text-align: center;
 	width: 100%;
 	border: none;
@@ -131,7 +145,9 @@ body {
 	font-size: 20px;
 	margin-top: 10px;
 }
+
 /* Contact Form - TextArea */
+
 .contact-us-form-text textarea {
 	text-align: center;
 	width: 100%;
@@ -143,7 +159,9 @@ body {
 	margin-top: 10px;
 	resize: none;
 }
+
 /* Contact Send Button */
+
 .send-button {
 	display: inline-block;
 	background-color: white;
@@ -159,12 +177,13 @@ body {
 	border-radius: 15px;
 }
 
- /* Navbar Item onHover - Animation */
+/* Navbar Item onHover - Animation */
+
 @keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
