@@ -178,6 +178,13 @@
 	border-radius: 15px;
 }
 
+/* About Us - Team Photo */
+
+.aboutTeamPhoto {
+	border: 2px solid #fff;
+	box-shadow: 5px 5px 2px #ccc;
+}
+
 /* About Us - Notes Title */
 
 .aboutNoteTitle {
@@ -212,6 +219,16 @@
 
 #aboutNoteTitleText {
 	color: red;
+}
+
+/* About Us - Note Body */
+
+.noteBody {
+	text-align: center;
+}
+
+.noteBody > ul {
+	display: inline-block;
 }
 
 /* Navbar Item onHover - Animation */
