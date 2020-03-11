@@ -188,7 +188,6 @@
 /* About Us - Notes Title */
 
 .aboutNoteTitle {
-	color: moccasin;
 	text-align: center;
 	text-shadow: 2px 2px black;
 	display: inline-block;
@@ -196,14 +195,18 @@
 	margin: auto;
 	overflow: hidden;
 	border: 2px solid black;
-	
+	padding: 20px;
+	font-size: xx-large;
+	font-weight: bolder;
+	background-color: orange;
 }
 
 /* About Us - Notes Title Headers */
 
 .aboutNoteTitleHeader {
-	color: orange;
-	font-size: x-large;
+	color: white;
+	font-family: 'Inconsolata', monospace;
+	font-size: xx-large;
 }
 
 /* About Us - About Section */
@@ -213,6 +216,17 @@
 	color: white;
 	text-align: center;
 	text-shadow: 2px 2px black;
+	margin-left: calc(-50vw + 50%);
+	margin-right: calc(-50vw + 50%);
+	border: orange 6px groove;
+
+	/* Parallax */
+	background-image: url("images/parallax.jpg");
+	min-height: 10%;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 /* About Us - About Section Text */
@@ -225,10 +239,39 @@
 
 .noteBody {
 	text-align: center;
+	margin-top: 1%;
+	width: 70%;
+	background-color: #0000002f;
+	position: absolute;
+	left: 30%;
+	margin-left: -15%;
+	padding: 30px 30px;
+	border-radius: 40px;
+	text-align: center;
+	border: 3px solid black;
+	box-shadow: gray 5px 5px;
 }
 
-.noteBody > ul {
-	display: inline-block;
+/* About Us - Note Body Heading */
+
+.noteBodyHeading {
+	color: rgb(37, 37, 37);
+	text-shadow: 2px 3px orange;
+	font-size: xx-large;
+	font-weight: bold;
+	font-family: 'Baloo Thambi 2', cursive;
+	border-bottom: 3px solid currentColor;
+	text-decoration: none;
+}
+
+/* About Us - Note Body Text */
+
+.noteBodyText {
+	font-size: x-large;
+	color: black;
+	font-weight: bolder;
+	list-style: none;
+	font-family: 'Inconsolata', monospace;
 }
 
 /* Navbar Item onHover - Animation */
