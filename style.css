@@ -291,6 +291,41 @@
 	border: 4px outset orange;
 }
 
+/* Game Reviews - Title */
+
+.gReviewTitle {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-family: 'Inconsolata', monospace;
+	font-size: 200%;
+	font-weight: bold;
+	border: 2px solid orange;
+	border-radius: 30px;
+	margin-top: 10px;
+	background-color: red;
+	color: rgb(255, 255, 255);
+	text-shadow: 2px 3px black;
+	font-style: italic;
+	text-align: center;
+}
+
+/* Game Reviews - Box */
+
+.gReviewBox {
+	text-align: center;
+	padding-top: 15px;
+	font-family: 'Inconsolata', monospace;
+	font-weight: bold;
+	font-size: large;
+	
+}
+
+/* Game Reviews - Text */
+
+.gReviewText {
+	font-family: 'Inconsolata', monospace;
+}
+
 /* Navbar Item onHover - Animation */
 
 @keyframes fadeIn {

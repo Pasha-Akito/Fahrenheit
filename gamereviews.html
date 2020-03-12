@@ -1,0 +1,160 @@
+<!-- Project Management
+ * Group: Fahrenheit 451
+ * Software Developers: Oskar Ciebien, Oisin Carrig
+-->
+
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+	<!-- Style CSS Page -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<title>Worth To Buy</title>
+</head>
+
+<body>
+
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark row">
+		<div class="col-md-4">
+			<div class="collapse navbar-collapse navbar-home" id="navbarNavDropdown">
+				<a class="navbar-brand" href="index.html">Worth To Buy</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+					aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<ul class="navbar-nav">
+				<!-- Home -->
+				<li class="nav-item active active-item">
+					<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+				</li>
+				<!-- About Us -->
+				<li class="nav-item">
+					<a class="nav-link" href="about.html">About Us</a>
+				</li>
+				<!-- Video Reviews -->
+				<li class="nav-item">
+					<a class="nav-link" href="videoreviews.html">Video Reviews</a>
+				</li>
+				<!-- Game Reviews Dropdown Menu -->
+				<li class="nav-item">
+					<a class="nav-link" href="gamereviews.html">Game Reviews</a>
+				</li>
+			</ul>
+		</div>
+		<div class="col-md-2">
+			<!-- Top Right Icon (Sign In) -->
+			<ul class="navbar-nav ml-auto nav-flex-icons dropdown">
+				<li class="nav-item">
+					<div id="loginMessage" class="nav-link"></div>
+				</li>
+				<li class="nav-item avatar dropdown-pull-right">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<img src="images/controller.png" class="rounded-circle z-depth-0" alt="avatar image"
+							height="35">
+					</a>
+					<div class="dropdown-menu signIn-dropdown signIn-onHover">
+						<!-- Sign In Panel -->
+						<h6>SIGN IN</h6>
+						<div class="signInBox">
+							<input type="email" id="emailInput" placeholder="email@example.com" name="username"
+								required>
+							<input type="password" id="passwordInput" placeholder="Password" name="password" required>
+						</div>
+						<!-- Sign In Button -->
+						<a class="btn btn-secondary text-white " onclick="checkSignIn()">Sign in</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="signup.html">Don't have an account? Sign up.</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<!-- END OF NAVBAR -->
+
+    <!-- Video Reviews - Body -->
+    <div class="gReviewTitle">
+        <font size="7">Strategy Video Reviews</font>
+    </div>
+    <div class="row gReviewBox">
+        <div class="col-md-4">
+            Fallout 4
+            <div>
+                <p></p>This game is incredibly well done by Bethesda. It has a unique story and open world.The post-apocalypse map is incredible and the sheer size of the map is amazing there is a full range of customizations, even building your own settlements, a lot of details in each object, I believe this is an incredible game that everyone should play.  I would give this game a whopping 4.7 stars.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            Bloodborne
+            <div>
+                <p>Shadow of the Colossus was a revelation, a game whose gorgeous aesthetic and reserved tone were, at the time, undeniably distinct. Originally released for the PS2 in 2005 and later remastered in 2011 for the PS3 and then again updated and remastered for the PS4 in 2018, most of the games technical issues were no longer a problem such as bad frame rate and loading times. Together with its unique take on boss encounters and a stirring soundtrack, ground-breaking open world design, those aspects made the game a defining title of the PlayStation 2 era. One of my all-time favorite games, this game deserves and incredible 5/5. </p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            Shadow of the Colossus
+            <div>
+                <p>Bloodbourne not just an amazing dance of dodges and swipes through encounters that often push the limits of reflexes and endurance, it’s a thought-provoking experience that’s wormed its way into my mind and melted my resolve. But through perseverance, patient growth, and determined skill, it’s proved itself an unconventional adventure that ultimately gives much more than it takes – which at times can be a staggering cost. By the end, the only frustrations that don’t turn to triumphs are the technical ones. After more than 60 hours of grappling with its terrors, monsters, and the environment itself, I’m left dumbfounded by Bloodborne’s capability to draw powerful emotions from me, and make me earn the successes that I’ll remember for years to come. This amazing adventure deserves nothing more than 5/5 stars. </p>
+            </div>
+        </div>
+	</div>
+	<!-- END OF HOME PAGE - BODY -->
+
+</body>
+
+</html>
+
+<!-- JavaScript -->
+<script>
+
+	/* Sign In Function										   *
+	 * Used to sign in user to the website using Local Storage */
+	function checkSignIn() {
+		let enteredEmail = document.getElementById("emailInput").value;
+		let enteredPassword = document.getElementById("passwordInput").value;
+
+		let storedEmail = localStorage.getItem("registeredEmail");
+		let storedPassword = localStorage.getItem("registeredPassword");
+		let storedFirstName = localStorage.getItem("registeredFirstName");
+
+		let savedEmail = enteredEmail;
+		let savedPassword = enteredPassword;
+
+		/* If login successful */
+		if (enteredEmail == storedEmail && savedPassword == enteredPassword) {
+			document.getElementById("loginMessage").innerHTML = "Hello, " + storedFirstName + "!";
+			console.log(storedEmail + " logged in!")
+		}
+		/* If login unsuccessful */
+		else {
+			document.getElementById("loginMessage").innerHTML = "Incorrect email or password";
+		}
+
+	}
+</script>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+	integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+	crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+	integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+	crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+	integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+	crossorigin="anonymous"></script>
