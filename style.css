@@ -286,8 +286,9 @@
 
 /* Video Reviews - Text */
 
-.vReviewText {
-	
+.vReviewVideo {
+	padding: 20px;
+	border: 4px outset orange;
 }
 
 /* Navbar Item onHover - Animation */
