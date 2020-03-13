@@ -316,14 +316,25 @@
 	padding-top: 15px;
 	font-family: 'Inconsolata', monospace;
 	font-weight: bold;
-	font-size: large;
-	
+}
+
+/* Game Reviews - Box Titles */
+
+.gReviewTitleBox {
+	font-size: xx-large;
+	padding: 10px;
 }
 
 /* Game Reviews - Text */
 
 .gReviewText {
-	font-family: 'Inconsolata', monospace;
+	font-size: large;
+}
+
+/* Game Reviews - Game Titles */
+
+.gRevivewTitleGame {
+	text-decoration: underline;
 }
 
 /* Navbar Item onHover - Animation */
