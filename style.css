@@ -346,7 +346,11 @@ body {
 /* Game Reviews - Post Author */
 
 .gReviewAuthor {
-
+	text-align: left;
+	font-size: medium;
+	font-family: cursive;
+	opacity: 60%;
+	font-style: italic;
 }
 
 /* Navbar Item onHover - Animation */
