@@ -10,6 +10,12 @@
 	padding: 0;
 }
 
+/* Body - All websites */
+
+body {
+	overflow: hidden;
+}
+
 /* Carousel */
 
 .caritem img {
@@ -335,6 +341,12 @@
 
 .gRevivewTitleGame {
 	text-decoration: underline;
+}
+
+/* Game Reviews - Post Author */
+
+.gReviewAuthor {
+
 }
 
 /* Navbar Item onHover - Animation */
