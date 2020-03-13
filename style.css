@@ -13,7 +13,7 @@
 /* Body - All websites */
 
 body {
-	overflow: hidden;
+	overflow-x: hidden;
 }
 
 /* Carousel */
